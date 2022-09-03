@@ -9,28 +9,32 @@ function premier(int $nombre){
         $range = range(0,$nombre);
         for ($i=0; $i < count($range) ; $i++) { 
             if($range[$i] % 2 != 0){
-
+                $premier .= $range[$i].',';
+                $nrb_diviseur++;
             }
         }
-    }elseif($nombre > 3){
+    }elseif($nombre >= 3){
         $range = range(0,$nombre);
         for ($i=0; $i < count($range) ; $i++) { 
-            if($range[$i] % 2 != 0){
-
+            if($range[$i] % 2 != 0 && $range[$i] % 3 != 0){
+                $premier .= $range[$i].',';
+                $nrb_diviseur++;
             }
         }
-    }elseif($nombre > 5){
+    }elseif($nombre >= 5){
         $range = range(0,$nombre);
         for ($i=0; $i < count($range) ; $i++) { 
-            if($range[$i] % 2 != 0){
-
+            if($range[$i] % 2 != 0 && $range[$i] % 3 != 0 && $range[$i] % 5){
+                $premier .= $range[$i].',';
+                $nrb_diviseur++;
             }
         }
-    }elseif($nombre > 7){
+    }elseif($nombre >= 7){
         $range = range(0,$nombre);
         for ($i=0; $i < count($range) ; $i++) { 
-            if($range[$i] % 2 != 0){
-
+            if($range[$i] % 2 != 0 && $range[$i] % 3 != 0 && $range[$i] % 5 != 0 && $range[$i] % 7 != 0){
+                $premier .= $range[$i].',';
+                $nrb_diviseur++;
             }
         }
     }
