@@ -5,10 +5,33 @@ function premier(int $nombre){
     $premier = '';
     if($nombre < 2){
         return "$nombre, '1'";
-    }else{
+    }elseif($nombre > 2){
         $range = range(0,$nombre);
         for ($i=0; $i < count($range) ; $i++) { 
-            
+            if($range[$i] % 2 != 0){
+
+            }
+        }
+    }elseif($nombre > 3){
+        $range = range(0,$nombre);
+        for ($i=0; $i < count($range) ; $i++) { 
+            if($range[$i] % 2 != 0){
+
+            }
+        }
+    }elseif($nombre > 5){
+        $range = range(0,$nombre);
+        for ($i=0; $i < count($range) ; $i++) { 
+            if($range[$i] % 2 != 0){
+
+            }
+        }
+    }elseif($nombre > 7){
+        $range = range(0,$nombre);
+        for ($i=0; $i < count($range) ; $i++) { 
+            if($range[$i] % 2 != 0){
+
+            }
         }
     }
 
